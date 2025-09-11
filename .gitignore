@@ -10,8 +10,36 @@
 *.userosscache
 *.sln.docstates
 
+# MAUI / Xamarin build output
+bin/
+obj/
+AppPackages/
+*.apk
+*.aab
+*.xamarinandroidcache
+*.xcodeproj/
+*.xcworkspace/
+*.xcuserdata/
+*.app/
+*.app.dSYM/
+
+# Jetbrains Rider (IDEA)
+.idea/
+*.sln.iml
+
+
+# .NET
+*.ncrunch*
+*.VisualState.xml
+TestResult.xml
+*.tmh
+*.log
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
+**/packages/*
+**/project.lock.json
+
 
 # Mono auto generated files
 mono_crash.*
@@ -46,8 +74,6 @@ Generated\ Files/
 [Bb]uild[Ll]og.*
 
 # NUnit
-*.VisualState.xml
-TestResult.xml
 nunit-*.xml
 
 # Build Results of an ATL Project
@@ -90,7 +116,6 @@ StyleCopReport.xml
 *.tmp
 *.tmp_proj
 *_wpftmp.csproj
-*.log
 *.vspscc
 *.vssscc
 .builds
@@ -215,7 +240,6 @@ ecf/
 rcf/
 
 # Windows Store app package directories and files
-AppPackages/
 BundleArtifacts/
 Package.StoreAssociation.xml
 _pkginfo.txt
@@ -361,5 +385,3 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
-
-.idea/
